@@ -1,7 +1,8 @@
-import "slick-carousel/slick/slick.css"; //thư viện react-slick
-import "slick-carousel/slick/slick-theme.css"; //slick-carousel
-import Slider from "react-slick";  
-import styles from "../styles/Banner.module.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import styles from "@/styles/Banner.module.css";
+import { useEffect } from "react";
 
 export default function Banner() {
   const images = [
@@ -13,13 +14,18 @@ export default function Banner() {
   const settings = {
     dots: true, // Hiển thị chấm chỉ mục
     infinite: true, // Lặp lại ảnh
-    speed: 500, // Thời gian chuyển đổi
+    speed: 400, // Thời gian chuyển đổi
     slidesToShow: 1, // Số slide hiển thị
     slidesToScroll: 1, // Số slide chuyển đổi
     autoplay: true, // Tự động chạy
     arrows: true, // Nút điều hướng
   };
-
+  useEffect(() => {
+    const dots = document.querySelector(".slick-dots");
+    if (dots) {
+      dots.style.bottom = "10px"; // Ghi đè giá trị inline
+    }
+  }, []);
   return (
     <div className={styles.bannerContainer}>
       <Slider {...settings}>

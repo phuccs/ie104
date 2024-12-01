@@ -1,20 +1,29 @@
-.banner {
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-  }
-  
-  .banner button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
+.bannerContainer {
+  width: 100vw; 
+  overflow: hidden;
+}
+
+.slick-slider {
+  position: relative;
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%; /* Kéo ảnh ra toàn bộ chiều ngang */
+  height: auto; /* Giữ tỉ lệ gốc */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+.slick-dots {
+  position: absolute;
+  bottom: 10px ;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+
+
+

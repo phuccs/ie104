@@ -1,4 +1,4 @@
-import styles from "../styles/ProductList.module.css";
+import styles from "@/styles/ProductList.module.css";
 
 export default function ProductList() {
   const products = [
