@@ -1,0 +1,106 @@
+/* Toàn bộ header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 20px;
+  background-color: rgba(129, 176, 186, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.header:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Màu trắng với độ trong suốt */
+  color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  flex-grow: 1; 
+  text-align: center;
+}
+
+.nav ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.header:hover .nav ul li a {
+  color: black;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+/* Dropdown menu container */
+.dropdownMenu {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 4px;
+  padding: 10px 0;
+  width: auto; /* Đảm bảo chiều rộng không bị tràn */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+  opacity: 0; 
+  visibility: hidden; 
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; /* Căn giữa các mục */
+  gap: 20px;
+}
+
+
+.dropdown:hover .dropdownMenu {
+  display: flex; 
+  opacity: 1; 
+  visibility: visible; 
+}
+
+
+.dropdownMenu li {
+  margin: 0 10px; 
+  text-align: center;
+}
+
+.dropdownMenu li a {
+  color: black; 
+  display: block; 
+  padding: 8px 20px; 
+  transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+.dropdownMenu li a:hover {
+  text-decoration: underline; 
+  background-color: rgba(0, 123, 255, 0.1); 
+}
