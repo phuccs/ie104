@@ -1,14 +1,6 @@
 import styles from "@/styles/ProductList.module.css";
-
+import products from "@/components/Products"
 export default function ProductList() {
-  const products = [
-    { id: 1, name: "ASTROX 88 S PRO", price: "$200", img: "/88spro.png" },
-    { id: 2, name: "NANOFLARE 700 PRO", price: "$250", img: "/racket2.jpg" },
-    { id: 3, name: "DUORA Z-STRIKE", price: "$250", img: "/racket2.jpg" },
-    { id: 4, name: "ASTROX NEXTAGE", price: "$250", img: "/racket2.jpg" },
-    { id: 5, name: "ASTROX 88 D PRO", price: "$250", img: "/racket2.jpg" },
-  ];
-
   return (
     <div className={styles.productList}>
       {products.map((product) => (

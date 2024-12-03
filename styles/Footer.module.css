@@ -29,29 +29,30 @@
   }
   
  
-  ul { /* đổi tên thành 1 class vd: .cạido ul để fix lỗi */
+  .quickLinks ul { 
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  ul li {
+  .quickLinks ul li {
     margin-bottom: 5px;
+    padding: 5px;
   }
   
-  ul li a {
+  .quickLinks ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
-  ul li a:hover {
-    color: #1da1f2; /* Màu xanh dương khi hover */
+  .quickLinks ul li a:hover {
+    color: #1da1f2; 
   }
   
   .icons {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    gap: 30px;
   }
   
   .icons img {
