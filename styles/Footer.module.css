@@ -28,24 +28,24 @@
     margin-bottom: 10px;
   }
   
- 
-  ul { /* đổi tên thành 1 class vd: .cạido ul để fix lỗi */
+  .caidoul ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
   
-  ul li {
+  
+  .caidoul ul li {
     margin-bottom: 5px;
   }
   
-  ul li a {
+  .caidoul ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
-  ul li a:hover {
+  .caidoul ul li a:hover {
     color: #1da1f2; /* Màu xanh dương khi hover */
   }
   
